@@ -13,7 +13,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buy / Lend a Book"
+            android:text="Buy / Rent a Book"
             android:id="@+id/buy_lend"/>
         <Button
             android:layout_width="match_parent"

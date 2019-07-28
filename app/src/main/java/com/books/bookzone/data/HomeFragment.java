@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.books.bookzone.content.BuylendActivity;
+import com.books.bookzone.content.BuyRentActivity;
 import com.books.bookzone.content.InternTrainingActivity;
 import com.books.bookzone.R;
 import com.books.bookzone.content.SellRentActivity;
@@ -36,7 +36,7 @@ Button buy_lend,sell_rent,intern_training;
         buy_lend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), BuylendActivity.class));
+                startActivity(new Intent(getActivity(), BuyRentActivity.class));
             }
         });
         sell_rent.setOnClickListener(new View.OnClickListener() {

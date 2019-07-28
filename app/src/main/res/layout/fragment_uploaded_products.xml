@@ -3,20 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".data.OrdersFragment">
+    tools:context=".data.UploadedProductsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <TextView
+       <!-- <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Orders"
+            android:text="Uploaded Products"
             android:gravity="center"
             android:textSize="25sp"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler"/>
     </LinearLayout>
 
 </FrameLayout>

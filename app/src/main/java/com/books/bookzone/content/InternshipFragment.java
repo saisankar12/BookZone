@@ -1,4 +1,4 @@
-package com.books.bookzone.data;
+package com.books.bookzone.content;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.books.bookzone.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyAccountFragment extends Fragment {
+public class InternshipFragment extends Fragment {
 
 
-    public MyAccountFragment() {
+    public InternshipFragment() {
         // Required empty public constructor
     }
 
@@ -24,8 +24,9 @@ public class MyAccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_my_account, container, false);
-    return v;
+        View v=inflater.inflate(R.layout.fragment_internship, container, false);
+
+        return v;
     }
 
 }

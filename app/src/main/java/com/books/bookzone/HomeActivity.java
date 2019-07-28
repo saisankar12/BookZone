@@ -1,6 +1,5 @@
 package com.books.bookzone;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -25,7 +24,7 @@ import com.books.bookzone.data.CoursesFragment;
 import com.books.bookzone.data.HomeFragment;
 import com.books.bookzone.data.MyAccountFragment;
 import com.books.bookzone.data.OrdersFragment;
-import com.books.bookzone.data.ProductsFragment;
+import com.books.bookzone.data.UploadedProductsFragment;
 import com.books.bookzone.others.CircleTransform;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -49,10 +48,10 @@ public class HomeActivity extends AppCompatActivity {
 
     // tags used to attach the fragments
     private static final String TAG_HOME = "home";
-    private static final String TAG_PHOTOS = "photos";
-    private static final String TAG_MOVIES = "movies";
-    private static final String TAG_NOTIFICATIONS = "notifications";
-    private static final String TAG_SETTINGS = "settings";
+    private static final String TAG_ORDERS = "Orders";
+    private static final String TAG_UPLODED_PRODUCTS = "Uploded Products";
+    private static final String TAG_COURSES = "Courses";
+    private static final String TAG_LOGOUT = "Logout";
     public static String CURRENT_TAG = TAG_HOME;
 
     // toolbar titles respected to selected nav menu item
@@ -195,22 +194,25 @@ public class HomeActivity extends AppCompatActivity {
                 HomeFragment homeFragment = new HomeFragment();
                 return homeFragment;
             case 1:
-                // photos
-                CoursesFragment photosFragment = new CoursesFragment();
-                return photosFragment;
-            case 2:
-                // movies fragment
-                MyAccountFragment moviesFragment = new MyAccountFragment();
-                return moviesFragment;
-            case 3:
-                // notifications fragment
+                // Orders Fragment
                 OrdersFragment notificationsFragment = new OrdersFragment();
                 return notificationsFragment;
 
+            case 2:
+                // Uploaded Products fragment
+                UploadedProductsFragment settingsFragment = new UploadedProductsFragment();
+                return settingsFragment;
+
+            case 3:
+                // Courses fragment
+                CoursesFragment photosFragment = new CoursesFragment();
+                return photosFragment;
+
             case 4:
                 // settings fragment
-                ProductsFragment settingsFragment = new ProductsFragment();
-                return settingsFragment;
+                MyAccountFragment moviesFragment = new MyAccountFragment();
+                return moviesFragment;
+
             default:
                 return new HomeFragment();
         }
@@ -239,21 +241,21 @@ public class HomeActivity extends AppCompatActivity {
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_HOME;
                         break;
-                    case R.id.nav_photos:
+                    case R.id.nav_orders:
                         navItemIndex = 1;
-                        CURRENT_TAG = TAG_PHOTOS;
+                        CURRENT_TAG = TAG_ORDERS;
                         break;
-                    case R.id.nav_movies:
+                    case R.id.nav_upload_products:
                         navItemIndex = 2;
-                        CURRENT_TAG = TAG_MOVIES;
+                        CURRENT_TAG = TAG_UPLODED_PRODUCTS;
                         break;
-                    case R.id.nav_notifications:
+                    case R.id.nav_courses:
                         navItemIndex = 3;
-                        CURRENT_TAG = TAG_NOTIFICATIONS;
+                        CURRENT_TAG = TAG_COURSES;
                         break;
-                    case R.id.nav_settings:
+                    case R.id.nav_logout:
                         navItemIndex = 4;
-                        CURRENT_TAG = TAG_SETTINGS;
+                        CURRENT_TAG = TAG_LOGOUT;
                         break;
                     case R.id.nav_about_us:
                         // launch new intent instead of loading fragment

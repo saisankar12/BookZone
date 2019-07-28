@@ -10,9 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".content.RentActivity"></activity>
-        <activity android:name=".content.InternTrainingActivity" />
+        <activity android:name=".content.InternTrainingActivity"
+            android:parentActivityName=".HomeActivity"/>
         <activity android:name=".content.SellRentActivity" />
-        <activity android:name=".content.BuylendActivity" />
+        <activity android:name=".content.BuyRentActivity" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_main"
