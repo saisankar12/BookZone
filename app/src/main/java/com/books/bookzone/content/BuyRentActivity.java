@@ -21,8 +21,7 @@ public class BuyRentActivity extends AppCompatActivity {
         engin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(BuyRentActivity.this, HomeActivity.class);
-                startActivity(i);
+
             }
         });
     }
