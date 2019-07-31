@@ -10,15 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Engineering"
+        android:onClick="booksMain"
+        android:background="#CD04F1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
         android:id="@+id/engineering"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Medicine"
+        android:onClick="booksMain"
+        android:background="#C0AE0C"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
         android:id="@+id/medicine"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/civils"
-        android:text="Civils"/>
+        android:onClick="booksMain"
+        android:text="Civils"
+        android:background="#66B807"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>

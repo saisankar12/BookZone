@@ -11,18 +11,28 @@ import com.books.bookzone.R;
 import com.books.bookzone.data.UploadedProductsFragment;
 
 public class BuyRentActivity extends AppCompatActivity {
-
-    Button engin;
+    Intent i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_rent_others);
-        engin=findViewById(R.id.engineering);
-        engin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        i=new Intent(BuyRentActivity.this,BooksMainActivity.class);
+    }
 
-            }
-        });
+    public void booksMain(View view) {
+      switch (view.getId()){
+          case R.id.engineering:
+              i.putExtra("sai","sankar");
+              startActivity(i);
+              break;
+          case R.id.medicine:
+              i.putExtra("sai","sankar1");
+              startActivity(i);
+              break;
+          case R.id.civils:
+              i.putExtra("sai","sankar2");
+              startActivity(i);
+              break;
+      }
     }
 }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".data.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,17 +15,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Buy / Rent a Book"
-            android:id="@+id/buy_lend"/>
+            android:id="@+id/buy_lend"
+            android:background="#CC09B8"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sell/Rent a Book"
-            android:id="@+id/sell_rent"/>
+            android:id="@+id/sell_rent"
+            android:background="#049FAD"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="serif"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/intern_training"
+            android:background="#C99A0D"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="serif"
             android:text="Internships and Training offers"/>
+
+
+
     </LinearLayout>
 
 

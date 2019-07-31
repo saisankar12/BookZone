@@ -22,31 +22,35 @@
             android:id="@+id/choose_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#F19204"
+            android:fontFamily="serif"
             android:text="Choose Photo"
-            android:layout_marginTop="10dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="6dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="6dp"
-            app:cardBackgroundColor="#E4591BEC"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="30dp"
-            app:paddingEnd="10dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:background="@drawable/design"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#1585C2"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Product Details"
                     android:textColor="#F6F6FA"
                     android:textSize="25sp" />
@@ -55,7 +59,8 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/white">
+                    android:layout_marginTop="10dp"
+                    app:boxStrokeColor="#03A9F4">
 
                     <EditText
                         android:id="@+id/product_title"
@@ -64,15 +69,16 @@
                         android:layout_marginBottom="10dp"
                         android:hint="Enter Product Title"
                         android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/white">
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeColor="#03A9F4">
 
                     <EditText
                         android:id="@+id/product_author"
@@ -81,14 +87,15 @@
                         android:layout_marginBottom="10dp"
                         android:hint="Enter Product Author"
                         android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     app:boxStrokeColor="@color/white">
 
                     <EditText
@@ -98,8 +105,8 @@
                         android:layout_marginBottom="10dp"
                         android:hint="About Product"
                         android:inputType="textMultiLine"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -107,34 +114,35 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="6dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="6dp"
-            app:cardBackgroundColor="#E4591BEC"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="30dp"
-            app:paddingEnd="10dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:background="@drawable/design"
+                android:orientation="vertical">
+
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#1585C2"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Renter Details"
-                    android:textColor="#F7F8FA"
+                    android:textColor="#F6F6FA"
                     android:textSize="25sp" />
+
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/white">
+                    app:boxStrokeColor="#03A9F4">
 
                     <EditText
                         android:id="@+id/renter_name"
@@ -143,15 +151,15 @@
                         android:layout_marginBottom="10dp"
                         android:hint="Enter Name"
                         android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/white">
+                    app:boxStrokeColor="#03A9F4">
 
                     <EditText
                         android:id="@+id/renter_phone"
@@ -160,15 +168,15 @@
                         android:layout_marginBottom="10dp"
                         android:hint="Phone Number"
                         android:inputType="phone"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/white">
+                    app:boxStrokeColor="#03A9F4">
 
                     <EditText
                         android:id="@+id/renter_address"
@@ -177,8 +185,8 @@
                         android:layout_marginBottom="10dp"
                         android:hint="Address"
                         android:inputType="textMultiLine"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white" />
+                        android:textColor="#000000"
+                        android:textColorHint="#D78F8C8C" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -188,13 +196,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Sell" />
+            android:background="#9905C2"
+            android:fontFamily="serif"
+            android:text="Sell"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/product_rent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Rent"/>
+            android:background="#046FF1"
+            android:fontFamily="serif"
+            android:text="Rent"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

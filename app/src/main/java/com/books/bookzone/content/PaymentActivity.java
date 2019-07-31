@@ -7,16 +7,16 @@ import android.view.View;
 
 import com.books.bookzone.R;
 
-public class RentActivity extends AppCompatActivity {
+public class PaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rent);
+        setContentView(R.layout.activity_payment);
     }
 
-    public void upload(View view) {
-        Intent i=new Intent(RentActivity.this, UploadBook.class);
+    public void continue_to_payment(View view) {
+        Intent i=new Intent(PaymentActivity.this,OrderActivity.class);
         startActivity(i);
     }
 }

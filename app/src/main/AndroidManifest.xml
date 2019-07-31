@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".content.RentActivity"></activity>
-        <activity android:name=".content.InternTrainingActivity"
-            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".content.OrderConfirmation"></activity>
+        <activity android:name=".content.OrderActivity" />
+        <activity android:name=".content.PaymentActivity" />
+        <activity android:name=".content.AddressActivity" />
+        <activity android:name=".content.UploadedBookDetailActivity" />
+        <activity android:name=".content.UploadBook" />
+        <activity android:name=".content.BooksMainActivity" />
+        <activity android:name=".content.RentActivity" />
+        <activity
+            android:name=".content.InternTrainingActivity"
+            android:parentActivityName=".HomeActivity" />
         <activity android:name=".content.SellRentActivity" />
         <activity android:name=".content.BuyRentActivity" />
         <activity
